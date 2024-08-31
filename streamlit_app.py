@@ -28,7 +28,7 @@ classifier_name = st.sidebar.selectbox("Select Classifier", ("MultinomialNB", "R
 st.title(value_name)
 st.title(classifier_name)
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+#st.set_option('deprecation.showPyplotGlobalUse', False)
 
 data = st.sidebar.file_uploader("Upload a CSV file", type ='csv')
 if data is not None:
