@@ -1,15 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import adtk
 import matplotlib.pyplot as plt
-import requests
-from bs4 import BeautifulSoup
-from adtk.detector import PersistAD
-from adtk.detector import InterQuartileRangeAD
-from sklearn.ensemble import IsolationForest
-from sklearn.neighbors import LocalOutlierFactor
-from adtk.visualization import plot
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
