@@ -14,7 +14,7 @@ from nltk.corpus import stopwords
 from wordcloud import WordCloud, STOPWORDS
 #from nltk.tokenize import tokenize
 st.sidebar.header("Emotion Detection on Text Data Application 💬")
-st.write("This particular app has been made in order to detect emotion on restaurant, hotel and ... reviews. This way the user can quickly obtain a summarization of the emotion on the reviews.")
+st.write("This particular app has been made in order to detect emotion on restaurant, hotel and airline reviews. This way the user can quickly obtain a summarization of the emotion on the reviews.")
 st.markdown("***Please upload the text file on CSV format***")
 
 
@@ -28,6 +28,7 @@ classifier_name = st.sidebar.selectbox("Select Classifier", ("MultinomialNB", "R
 st.title(value_name)
 st.title(classifier_name)
 
+st.info("On the sidebar, please choose whether the file you upload, contains reviews about Restaurants, Hotels or Airlines").
 
 st.sidebar.info("Please upload a CSV file in this format with a maximum size of 200MB")
 table_data = data = ['Text Review Number 1', 'Text Review Number 2', 'Text Review Number 3', '...']
