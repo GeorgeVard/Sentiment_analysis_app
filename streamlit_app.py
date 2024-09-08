@@ -27,7 +27,7 @@ st.title(classifier_name)
 
 st.info("On the sidebar **Select Review Type**, please choose whether the file you upload, contains reviews about Restaurants, Hotels or Airlines.")
 st.info("Choose an AI classifier to classify your reviews")
-st.info("Hint: The longer the classifier gets to classify the reviews, the better results you get, but it's more time consuming. MultinomialNB is the quicker one while MultilayerPerceptron is the longer one 👀" 
+st.info("Hint: The longer the classifier gets to classify the reviews, the better results you get, but it's more time consuming. MultinomialNB is the quicker one while MultilayerPerceptron is the longer one 👀") 
 
 st.sidebar.info("Please upload a CSV file in this format with a maximum size of 200MB")
 table_data = data = ['Text Review Number 1', 'Text Review Number 2', 'Text Review Number 3', '...']
