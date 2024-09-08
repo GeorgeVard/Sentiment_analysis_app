@@ -29,6 +29,8 @@ st.title(value_name)
 st.title(classifier_name)
 
 st.info("On the sidebar **Select Review Type**, please choose whether the file you upload, contains reviews about Restaurants, Hotels or Airlines.")
+st.info("Choose an algorithm to classify your reviews:
+        "**MultinomailNB**: Naive Bayes Classifier")
 
 st.sidebar.info("Please upload a CSV file in this format with a maximum size of 200MB")
 table_data = data = ['Text Review Number 1', 'Text Review Number 2', 'Text Review Number 3', '...']
