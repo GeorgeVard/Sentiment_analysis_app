@@ -620,7 +620,7 @@ if data is not None:
 
     if value_name == 'Hotel':
         if classifier_name == 'MultinomialNB':
-            df=pd.read_csv('tripadvisor_hotel_reviews_2_2.csv')
+            df=pd.read_csv('tripadvisor_hotel_reviews_2.csv')
             y = df["Rating"]
             X = df.iloc[:,:-1]
             y = pd.to_numeric(y)
