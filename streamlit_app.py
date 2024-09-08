@@ -1181,7 +1181,7 @@ if data is not None:
 
     if value_name == 'Airlines':
         if classifier_name == 'MultinomialNB':
-            df=pd.read_csv('Airline Passenger Reviews.csv')
+            df=pd.read_csv('Airline Passenger Reviews 2.csv')
             df = df.rename(columns={"customer_review": "Review", "NPS Score": "Rating"})
 
             y = df["Rating"]
@@ -1357,7 +1357,7 @@ if data is not None:
 
         if classifier_name == 'RandomForest':
 
-            df=pd.read_csv('Airline Passenger Reviews.csv')
+            df=pd.read_csv('Airline Passenger Reviews 2.csv')
             df = df.rename(columns={"customer_review": "Review", "NPS Score": "Rating"})
 
             y = df["Rating"]
@@ -1533,7 +1533,7 @@ if data is not None:
 
         else:
 
-            df=pd.read_csv('Airline Passenger Reviews.csv')
+            df=pd.read_csv('Airline Passenger Reviews 2.csv')
             df = df.rename(columns={"customer_review": "Review", "NPS Score": "Rating"})
 
             y = df["Rating"]
