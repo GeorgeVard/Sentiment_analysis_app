@@ -138,7 +138,7 @@ if data is not None:
             plt.tight_layout(pad = 0)
         
             plt.show()
-            #st.pyplot(fig)
+            st.pyplot()
 
             for i in range(0,len(y)):
                 if (y[i]== 5.):
