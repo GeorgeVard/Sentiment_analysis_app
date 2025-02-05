@@ -138,7 +138,7 @@ if data is not None:
             plt.tight_layout(pad = 0)
         
             plt.show()
-            st.pyplot()
+            
 
             for i in range(0,len(y)):
                 if (y[i]== 5.):
@@ -233,7 +233,8 @@ if data is not None:
             st.markdown('**Classification Results Summarization**')
 
             #new_df["Classification Result"].value_counts(dropna=True).plot(kind="pie")
-
+            
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             counts = new_df['Classification Result'].value_counts(dropna=True)
             counts.plot.pie(autopct='%1.1f%%', labels=['Positive', 'Negative', 'Neutral'], shadow=True)
 
@@ -241,7 +242,7 @@ if data is not None:
 
             plt.axis('equal')
             plt.show()
-            st.pyplot()
+            st.pyplot(fig)
 
         elif classifier_name == 'RandomForest':
             df=pd.read_csv('Restaurant reviews.csv', encoding = "ISO-8859-1")
