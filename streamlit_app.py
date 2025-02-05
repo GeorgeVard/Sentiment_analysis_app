@@ -86,17 +86,19 @@ if data is not None:
             
             new_df['Word_count'] = new_df['Review'].apply(word_count)
             st.write(new_df.head(10))
-
+            
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Word_count'].plot(kind="line", title="Word Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Words')
-            st.pyplot()
+            st.pyplot(fig)
 
 
             st.markdown('**Mean Word Length: average length of words per review**')
             new_df['mean_word_length'] = new_df['Review'].map(lambda rev: np.mean([len(word) for word in rev.split()]))
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
-            st.pyplot()
+            st.pyplot(fig)
 
             #st.markdown('Mean sentence length: Average length of the sentences in the review')
             #st.write(np.mean([len(sent) for sent in tokenize.sent_tokenize(new_df['Review'][0])]))
@@ -261,8 +263,9 @@ if data is not None:
             new_df['Length'] = new_df['Review'].str.len()
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
-            st.pyplot()
+            st.pyplot(fig)
 
             st.markdown('**Word Count: The cound of words for each review**')
 
@@ -276,16 +279,18 @@ if data is not None:
             new_df['Word_count'] = new_df['Review'].apply(word_count)
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Word_count'].plot(kind="line", title="Word Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Words')
-            st.pyplot()
+            st.pyplot(fig)
 
 
             st.markdown('**Mean Word Length: average length of words per review**')
             new_df['mean_word_length'] = new_df['Review'].map(lambda rev: np.mean([len(word) for word in rev.split()]))
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
-            st.pyplot()
+            st.pyplot(fig)
 
             #st.markdown('Mean sentence length: Average length of the sentences in the review')
             #st.write(np.mean([len(sent) for sent in tokenize.sent_tokenize(new_df['Review'][0])]))
@@ -450,8 +455,9 @@ if data is not None:
             new_df['Length'] = new_df['Review'].str.len()
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
-            st.pyplot()
+            st.pyplot(fig)
 
             st.markdown('**Word Count: The cound of words for each review**')
 
@@ -465,16 +471,18 @@ if data is not None:
             new_df['Word_count'] = new_df['Review'].apply(word_count)
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Word_count'].plot(kind="line", title="Word Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Words')
-            st.pyplot()
+            st.pyplot(fig)
 
 
             st.markdown('**Mean Word Length: average length of words per review**')
             new_df['mean_word_length'] = new_df['Review'].map(lambda rev: np.mean([len(word) for word in rev.split()]))
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
-            st.pyplot()
+            st.pyplot(fig)
 
             #st.markdown('Mean sentence length: Average length of the sentences in the review')
             #st.write(np.mean([len(sent) for sent in tokenize.sent_tokenize(new_df['Review'][0])]))
@@ -637,8 +645,9 @@ if data is not None:
             new_df['Length'] = new_df['Review'].str.len()
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
-            st.pyplot()
+            st.pyplot(fig)
 
             st.markdown('**Word Count: The cound of words for each review**')
 
@@ -652,16 +661,18 @@ if data is not None:
             new_df['Word_count'] = new_df['Review'].apply(word_count)
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Word_count'].plot(kind="line", title="Word Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Words')
-            st.pyplot()
+            st.pyplot(fig)
 
 
             st.markdown('**Mean Word Length: average length of words per review**')
             new_df['mean_word_length'] = new_df['Review'].map(lambda rev: np.mean([len(word) for word in rev.split()]))
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
-            st.pyplot()
+            st.pyplot(fig)
 
             #st.markdown('Mean sentence length: Average length of the sentences in the review')
             #st.write(np.mean([len(sent) for sent in tokenize.sent_tokenize(new_df['Review'][0])]))
@@ -824,8 +835,9 @@ if data is not None:
             new_df['Length'] = new_df['Review'].str.len()
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
-            st.pyplot()
+            st.pyplot(fig)
 
             st.markdown('**Word Count: The cound of words for each review**')
 
@@ -839,16 +851,18 @@ if data is not None:
             new_df['Word_count'] = new_df['Review'].apply(word_count)
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Word_count'].plot(kind="line", title="Word Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Words')
-            st.pyplot()
+            st.pyplot(fig)
 
 
             st.markdown('**Mean Word Length: average length of words per review**')
             new_df['mean_word_length'] = new_df['Review'].map(lambda rev: np.mean([len(word) for word in rev.split()]))
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
-            st.pyplot()
+            st.pyplot(fig)
 
             #st.markdown('Mean sentence length: Average length of the sentences in the review')
             #st.write(np.mean([len(sent) for sent in tokenize.sent_tokenize(new_df['Review'][0])]))
@@ -1010,8 +1024,9 @@ if data is not None:
             new_df['Length'] = new_df['Review'].str.len()
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
-            st.pyplot()
+            st.pyplot(fig)
 
             st.markdown('**Word Count: The cound of words for each review**')
 
@@ -1025,16 +1040,18 @@ if data is not None:
             new_df['Word_count'] = new_df['Review'].apply(word_count)
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Word_count'].plot(kind="line", title="Word Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Words')
-            st.pyplot()
+            st.pyplot(fig)
 
 
             st.markdown('**Mean Word Length: average length of words per review**')
             new_df['mean_word_length'] = new_df['Review'].map(lambda rev: np.mean([len(word) for word in rev.split()]))
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
-            st.pyplot()
+            st.pyplot(fig)
 
             #st.markdown('Mean sentence length: Average length of the sentences in the review')
             #st.write(np.mean([len(sent) for sent in tokenize.sent_tokenize(new_df['Review'][0])]))
@@ -1210,8 +1227,9 @@ if data is not None:
             new_df['Length'] = new_df['Review'].str.len()
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
-            st.pyplot()
+            st.pyplot(fig)
 
             st.markdown('**Word Count: The cound of words for each review**')
 
@@ -1225,16 +1243,18 @@ if data is not None:
             new_df['Word_count'] = new_df['Review'].apply(word_count)
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Word_count'].plot(kind="line", title="Word Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Words')
-            st.pyplot()
+            st.pyplot(fig)
 
 
             st.markdown('**Mean Word Length: average length of words per review**')
             new_df['mean_word_length'] = new_df['Review'].map(lambda rev: np.mean([len(word) for word in rev.split()]))
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
-            st.pyplot()
+            st.pyplot(fig)
 
             #st.markdown('Mean sentence length: Average length of the sentences in the review')
             #st.write(np.mean([len(sent) for sent in tokenize.sent_tokenize(new_df['Review'][0])]))
@@ -1386,8 +1406,9 @@ if data is not None:
             new_df['Length'] = new_df['Review'].str.len()
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
-            st.pyplot()
+            st.pyplot(fig)
 
             st.markdown('**Word Count: The cound of words for each review**')
 
@@ -1401,16 +1422,18 @@ if data is not None:
             new_df['Word_count'] = new_df['Review'].apply(word_count)
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Word_count'].plot(kind="line", title="Word Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Words')
-            st.pyplot()
+            st.pyplot(fig)
 
 
             st.markdown('**Mean Word Length: average length of words per review**')
             new_df['mean_word_length'] = new_df['Review'].map(lambda rev: np.mean([len(word) for word in rev.split()]))
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
-            st.pyplot()
+            st.pyplot(fig)
 
             #st.markdown('Mean sentence length: Average length of the sentences in the review')
             #st.write(np.mean([len(sent) for sent in tokenize.sent_tokenize(new_df['Review'][0])]))
@@ -1562,8 +1585,9 @@ if data is not None:
             new_df['Length'] = new_df['Review'].str.len()
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
-            st.pyplot()
+            st.pyplot(fig)
 
             st.markdown('**Word Count: The cound of words for each review**')
 
@@ -1577,16 +1601,18 @@ if data is not None:
             new_df['Word_count'] = new_df['Review'].apply(word_count)
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Word_count'].plot(kind="line", title="Word Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Words')
-            st.pyplot()
+            st.pyplot(fig)
 
 
             st.markdown('**Mean Word Length: average length of words per review**')
             new_df['mean_word_length'] = new_df['Review'].map(lambda rev: np.mean([len(word) for word in rev.split()]))
             st.write(new_df.head(10))
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
-            st.pyplot()
+            st.pyplot(fig)
 
             #st.markdown('Mean sentence length: Average length of the sentences in the review')
             #st.write(np.mean([len(sent) for sent in tokenize.sent_tokenize(new_df['Review'][0])]))
