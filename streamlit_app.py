@@ -132,14 +132,13 @@ if data is not None:
                         min_font_size = 3).generate(comment_words)
         
             # plot the WordCloud image 
-            fig = plt.figure(figsize=(10, 10), num=1, clear=True)
             plt.figure(figsize = (8, 8), facecolor = None)
             plt.imshow(wordcloud)
             plt.axis("off")
             plt.tight_layout(pad = 0)
         
             plt.show()
-            st.pyplot(fig)
+            #st.pyplot(fig)
 
             for i in range(0,len(y)):
                 if (y[i]== 5.):
