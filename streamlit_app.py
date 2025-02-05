@@ -425,7 +425,10 @@ if data is not None:
 
             st.markdown('**Classification Results Summarization**')
 
+            
             #new_df["Classification Result"].value_counts(dropna=True).plot(kind="pie")
+            
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
 
             counts = new_df['Classification Result'].value_counts(dropna=True)
             counts.plot.pie(autopct='%1.1f%%', labels=['Positive', 'Negative', 'Neutral'], shadow=True)
@@ -434,7 +437,7 @@ if data is not None:
 
             plt.axis('equal')
             plt.show()
-            st.pyplot()
+            st.pyplot(fig)
 
         else:
             df=pd.read_csv('Restaurant reviews.csv', encoding = "ISO-8859-1")
@@ -619,6 +622,7 @@ if data is not None:
 
             #new_df["Classification Result"].value_counts(dropna=True).plot(kind="pie")
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             counts = new_df['Classification Result'].value_counts(dropna=True)
             counts.plot.pie(autopct='%1.1f%%', labels=['Positive', 'Negative', 'Neutral'], shadow=True)
 
@@ -626,7 +630,7 @@ if data is not None:
 
             plt.axis('equal')
             plt.show()
-            st.pyplot()
+            st.pyplot(fig)
 
     if value_name == 'Hotel':
         if classifier_name == 'MultinomialNB':
@@ -809,6 +813,7 @@ if data is not None:
 
             #new_df["Classification Result"].value_counts(dropna=True).plot(kind="pie")
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             counts = new_df['Classification Result'].value_counts(dropna=True)
             counts.plot.pie(autopct='%1.1f%%', labels=['Positive', 'Negative', 'Neutral'], shadow=True)
 
@@ -816,7 +821,7 @@ if data is not None:
 
             plt.axis('equal')
             plt.show()
-            st.pyplot()
+            st.pyplot(fig)
         
         elif classifier_name == 'RandomForest':
 
@@ -999,6 +1004,7 @@ if data is not None:
 
             #new_df["Classification Result"].value_counts(dropna=True).plot(kind="pie")
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             counts = new_df['Classification Result'].value_counts(dropna=True)
             counts.plot.pie(autopct='%1.1f%%', labels=['Positive', 'Negative', 'Neutral'], shadow=True)
 
@@ -1006,7 +1012,7 @@ if data is not None:
 
             plt.axis('equal')
             plt.show()
-            st.pyplot()
+            st.pyplot(fig)
 
         else:
             df=pd.read_csv('tripadvisor_hotel_reviews_mini.csv')
@@ -1188,6 +1194,7 @@ if data is not None:
 
             #new_df["Classification Result"].value_counts(dropna=True).plot(kind="pie")
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             counts = new_df['Classification Result'].value_counts(dropna=True)
             counts.plot.pie(autopct='%1.1f%%', labels=['Positive', 'Negative', 'Neutral'], shadow=True)
 
@@ -1195,7 +1202,7 @@ if data is not None:
 
             plt.axis('equal')
             plt.show()
-            st.pyplot()
+            st.pyplot(fig)
 
     if value_name == 'Airlines':
         if classifier_name == 'MultinomialNB':
@@ -1367,6 +1374,7 @@ if data is not None:
 
             #new_df["Classification Result"].value_counts(dropna=True).plot(kind="pie")
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             counts = new_df['Classification Result'].value_counts(dropna=True)
             counts.plot.pie(autopct='%1.1f%%', labels=['Positive', 'Negative', 'Neutral'], shadow=True)
 
@@ -1374,7 +1382,7 @@ if data is not None:
 
             plt.axis('equal')
             plt.show()
-            st.pyplot()
+            st.pyplot(fig)
 
         if classifier_name == 'RandomForest':
 
@@ -1546,6 +1554,7 @@ if data is not None:
 
             #new_df["Classification Result"].value_counts(dropna=True).plot(kind="pie")
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             counts = new_df['Classification Result'].value_counts(dropna=True)
             counts.plot.pie(autopct='%1.1f%%', labels=['Positive', 'Negative', 'Neutral'], shadow=True)
 
@@ -1553,7 +1562,7 @@ if data is not None:
 
             plt.axis('equal')
             plt.show()
-            st.pyplot()
+            st.pyplot(fig)
 
         else:
 
@@ -1725,6 +1734,7 @@ if data is not None:
 
             #new_df["Classification Result"].value_counts(dropna=True).plot(kind="pie")
 
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             counts = new_df['Classification Result'].value_counts(dropna=True)
             counts.plot.pie(autopct='%1.1f%%', labels=['Positive', 'Negative', 'Neutral'], shadow=True)
 
@@ -1732,7 +1742,7 @@ if data is not None:
 
             plt.axis('equal')
             plt.show()
-            st.pyplot()
+            st.pyplot(fig)
 
 
 
