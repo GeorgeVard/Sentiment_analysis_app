@@ -94,8 +94,8 @@ if data is not None:
             new_df['mean_word_length'] = new_df['Review'].map(lambda rev: np.mean([len(word) for word in rev.split()]))
             st.write(new_df.head(10))
 
-            #new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
-            st.pyplot(new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length'))
+            new_df['mean_word_length'].plot(kind="line", title="Mean Word Length Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Mean Word Length')
+            st.pyplot()
 
             #st.markdown('Mean sentence length: Average length of the sentences in the review')
             #st.write(np.mean([len(sent) for sent in tokenize.sent_tokenize(new_df['Review'][0])]))
