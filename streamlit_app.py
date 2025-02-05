@@ -71,7 +71,7 @@ if data is not None:
             new_df['Length'] = new_df['Review'].str.len()
             st.write(new_df.head(10))
 
-            fig, ax = plt.subplots(nrows=2, ncols=1, figsize=(10, 8))
+            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10, 8))
             new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
             st.pyplot(fig)
 
