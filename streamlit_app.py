@@ -132,7 +132,7 @@ if data is not None:
                         min_font_size = 3).generate(comment_words)
         
             # plot the WordCloud image 
-            fig, ax = plt.subplots()
+            fig = plt.figure(figsize=(10, 10), num=1, clear=True)
             plt.figure(figsize = (8, 8), facecolor = None)
             plt.imshow(wordcloud)
             plt.axis("off")
