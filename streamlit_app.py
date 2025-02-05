@@ -71,8 +71,8 @@ if data is not None:
             new_df['Length'] = new_df['Review'].str.len()
             st.write(new_df.head(10))
 
-            new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
-            st.pyplot()
+            fig = new_df['Length'].plot(kind="line", title="Character Count Distribution Line Plot", xlabel = 'Review Number', ylabel = 'Number of Characters')
+            st.pyplot(fig)
 
             st.markdown('**Word Count: The cound of words for each review**')
 
